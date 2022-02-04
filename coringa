@@ -10,4 +10,9 @@ def again():
     else:
         again()
         
-#
+# Importando biblioteca date para trabalhos com datas
+
+from datetime import date
+
+ano_atual = date.today().year
+print(ano_atual)
