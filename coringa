@@ -1,0 +1,13 @@
+# função de repetição do programa ou encerramento
+
+def again():
+    executar_novo = input("Quer executar novamente: [S] Sim ou [N] Não: \n")
+    if executar_novo.upper() == "S":
+        calculadora()   
+        # nome da função principal
+    elif executar_novo.upper() == "N":
+        print("Até mais tarde!!!")
+    else:
+        again()
+        
+#
