@@ -16,3 +16,22 @@ from datetime import date
 
 ano_atual = date.today().year
 print(ano_atual)
+
+# Saudação de acordo com o horário do dia (bom dia, boa tarde, boa noite)
+
+def saudacao():
+
+    from datetime import datetime
+
+    nome = str(input("Qual seu nome: "))
+    hora_primaria = int(datetime.now().strftime("%H"))
+    hora_atual = datetime.now().strftime("%H:%M")
+
+    if hora_primaria < 12:
+        print("Olá {}, são {} hs. Bom dia!".format(nome, hora_atual))
+    elif hora_primaria >= 12 or hora_primaria < 18:
+        print("Olá {}, são {} hs. Boa tarde".format(nome, hora_atual))
+    elif hora_primaria >= 18 or hora_primaria < 24:
+        print("Olá {}, são {} hs. Boa noite!".format(nome, hora_atual))
+
+saudacao()
