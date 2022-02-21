@@ -1,4 +1,4 @@
-# função de repetição do programa ou encerramento
+#1 # função de repetição do programa ou encerramento
 
 def again():
     executar_novo = input("Quer executar novamente: [S] Sim ou [N] Não: \n")
@@ -10,14 +10,14 @@ def again():
     else:
         again()
         
-# Importando biblioteca date para trabalhos com datas
+#2 # Importando biblioteca date para trabalhos com datas
 
 from datetime import date
 
 ano_atual = date.today().year
 print(ano_atual)
 
-# Saudação de acordo com o horário do dia (bom dia, boa tarde, boa noite)
+#3 # Saudação de acordo com o horário do dia (bom dia, boa tarde, boa noite)
 
 def saudacao():
 
@@ -35,3 +35,15 @@ def saudacao():
         print("Olá {}, são {} hs. Boa noite!".format(nome, hora_atual))
 
 saudacao()
+
+#4 # Medindo caracteres (strings)
+
+texto = "Python é show!"
+
+novo_texto = texto.replace(" ", "")
+
+#print("O texto = {}, possui {} caracteres".format(texto, len(novo_texto)))
+
+print(f'O Texto = {texto}, possui {len(novo_texto)} caracteres')
+
+
